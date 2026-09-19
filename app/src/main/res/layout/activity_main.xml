@@ -29,6 +29,60 @@
         android:paddingVertical="24dp"
         app:layout_constraintTop_toBottomOf="@id/tvLab1"/>
 
+    <!-- 红色块 This -->
+    <TextView
+        android:id="@+id/tvThis"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#ff0000"
+        android:text="This"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvResponsive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvIs"/>
+
+    <!-- 蓝色块 is -->
+    <TextView
+        android:id="@+id/tvIs"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#0000ff"
+        android:text="is"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvResponsive"
+        app:layout_constraintStart_toEndOf="@id/tvThis"
+        app:layout_constraintEnd_toStartOf="@id/tvMy"/>
+
+    <!-- 紫色块 my -->
+    <TextView
+        android:id="@+id/tvMy"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#9900cc"
+        android:text="my"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvResponsive"
+        app:layout_constraintStart_toEndOf="@id/tvIs"
+        app:layout_constraintEnd_toStartOf="@id/tvFirst"/>
+
+    <!-- 黄色块 first -->
+    <TextView
+        android:id="@+id/tvFirst"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#ffff00"
+        android:text="first"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvResponsive"
+        app:layout_constraintStart_toEndOf="@id/tvMy"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
