@@ -81,6 +81,53 @@
         app:layout_constraintStart_toEndOf="@id/tvMy"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <!-- Android Application 黑色区域：占满中间剩余空间 -->
+    <TextView
+        android:id="@+id/tvAndroidApp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Android Application"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvThis"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"/>
+
+    <!-- 底部浅紫色按钮栏 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3eef8"
+        android:paddingVertical="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:backgroundTint="#7b5bb2"
+            android:textColor="#ffffff"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCancel"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:backgroundTint="#7b5bb2"
+            android:textColor="#ffffff"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnChange"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 
