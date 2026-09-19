@@ -1,107 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#000000">
 
-    <!-- Lab1 标题 -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lab 1"
-        android:textColor="#ffffff"
-        android:gravity="center"
-        android:paddingVertical="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- 白色区域 Responsive Layout 1 -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:text="Responsive Layout 1"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:paddingVertical="24dp"/>
-
-    <!-- 四色横向色块 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#ff0000"
-            android:text="This"
-            android:textColor="#ffffff"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#0000ff"
-            android:text="is"
-            android:textColor="#ffffff"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#9900cc"
-            android:text="my"
-            android:textColor="#ffffff"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#ffff00"
-            android:text="first"
-            android:textColor="#000000"
-            android:gravity="center"/>
-    </LinearLayout>
-
-    <!-- 黑色大区域：撑满剩余空间，Android Application 文字居中 -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Android Application"
-        android:textColor="#ffffff"
-        android:gravity="center"/>
-
-    <!-- 底部按钮区域 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#f3eef8"
-        android:gravity="center"
-        android:paddingVertical="30dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Change"
-            android:backgroundTint="#7b5bb2"
-            android:textColor="#ffffff"
-            android:layout_marginHorizontal="16dp"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancel"
-            android:backgroundTint="#7b5bb2"
-            android:textColor="#ffffff"
-            android:layout_marginHorizontal="16dp"/>
-    </LinearLayout>
-
-</LinearLayout>
 
 
